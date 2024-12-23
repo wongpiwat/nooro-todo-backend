@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("MYSQL_DATABASE_URL")
+}
+
+model Task {
+  id         String @id @db.VarChar(255)
+  title      String @db.Text
+  color      String @db.Text
+  status     String @db.Text
+  timestamps String @db.Text
+}
