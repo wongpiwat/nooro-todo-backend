@@ -8,9 +8,9 @@ datasource db {
 }
 
 model Task {
-  id         String @id @db.VarChar(255)
-  title      String @db.Text
-  color      String @db.Text
-  status     String @db.Text
-  timestamps String @db.Text
+  id         String   @id @db.VarChar(255)
+  title      String   @db.Text
+  color      String   @db.Text
+  status     Boolean
+  timestamps DateTime @db.DateTime(0)
 }
