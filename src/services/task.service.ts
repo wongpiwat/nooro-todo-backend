@@ -27,12 +27,14 @@ const create = async (id: string, title: string, color: string) => {
   return task;
 };
 
-const update = async (id: string, title: string, color: string) => {
+const update = async (id: string, title: string, color: string, status: boolean) => {
   const task = await prisma.task.update({
     where: { id: id },
     data: {
       title: title,
       color: color,
+      status: status,
+      timestamps: new Date(),
     },
   });
   return task;

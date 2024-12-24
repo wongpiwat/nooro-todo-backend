@@ -39,8 +39,8 @@ const createTask = async (req, res, next) => {
 const updateTaskById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { title, color } = req.body;
-    const result = await taskService.update(id, title, color);
+    const { title, color, status } = req.body;
+    const result = await taskService.update(id, title, color, status);
     res.json(result);
   } catch (err) {
     console.error(`[Error] updateTaskById:`, err);
