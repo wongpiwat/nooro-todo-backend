@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res.send("🚀 Welcome to the Todo App APIs!");
 });
 
-app.use("/tasks", taskRoute);
+app.use("/api/v1/tasks", taskRoute);
 
 app.listen(port, () => {
   console.log(`🚀 Server ready at: http://localhost:${port}`);
