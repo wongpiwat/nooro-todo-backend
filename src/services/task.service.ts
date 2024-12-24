@@ -34,7 +34,6 @@ const update = async (id: string, title: string, color: string, status: boolean)
       title: title,
       color: color,
       status: status,
-      timestamps: new Date(),
     },
   });
   return task;
