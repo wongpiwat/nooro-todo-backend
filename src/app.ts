@@ -18,6 +18,10 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/tasks", taskRoute);
 
+app.use((_, res) => {
+  res.status(404).send("🚫 404, Server Not Found");
+});
+
 app.listen(port, () => {
   console.log(`🚀 Server ready at: http://localhost:${port}`);
 });
