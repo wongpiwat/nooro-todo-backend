@@ -9,7 +9,7 @@
   ],
   "headers": [
     {
-      "source": "/.*",
+      "source": "/api/(.*)",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
@@ -17,11 +17,11 @@
         },
         {
           "key": "Access-Control-Allow-Methods",
-          "value": "GET, POST, PUT, DELETE"
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
         },
         {
           "key": "Access-Control-Allow-Headers",
-          "value": "Content-Type"
+          "value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
         }
       ]
     }
