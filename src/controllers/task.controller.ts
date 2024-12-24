@@ -4,7 +4,15 @@ import ShortUniqueId from "short-unique-id";
 const getTasks = async (req, res, next) => {
   try {
     const tasks = await taskService.getAll();
-    res.json(tasks);
+
+    // Sort tasks by timestamp in descending order
+    const sortedTasks = tasks.sort((a, b) => {
+      const aDate = new Date(a.timestamps);
+      const bDate = new Date(b.timestamps);
+      return bDate.getTime() - aDate.getTime();
+    });
+
+    res.json(sortedTasks);
   } catch (err) {
     console.error(`[Error] getTasks:`, err);
     next(err);
