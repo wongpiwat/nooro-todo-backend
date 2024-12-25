@@ -68,7 +68,7 @@ const taskData: Prisma.TaskCreateInput[] = [
     id: "WQRmsLVqdw",
     title:
       "Calculate statistics on the formula to calculate the employment rate as a percentage",
-    color: "indigo",
+    color: "orange",
     status: false,
     timestamps: new Date(),
   },
