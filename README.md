@@ -105,14 +105,14 @@ Response:
     {
       "id": "1",
       "title": "Task 1",
-      "color": "#FF0000",
+      "color": "red",
       "status": 0,
       "timestamps": "2021-09-01T00:00:00.000Z"
     },
     {
       "id": "2",
       "title": "Task 2",
-      "color": "#00FF00",
+      "color": "green",
       "status": 1,
       "timestamps": "2021-09-01T00:00:00.000Z"
     }
@@ -139,7 +139,7 @@ Response:
   "data": {
     "id": "1",
     "title": "Task 1",
-    "color": "#FF0000",
+    "color": "red",
     "status": 0,
     "timestamps": "2021-09-01T00:00:00.000Z"
   }
@@ -155,7 +155,7 @@ Request body:
 ```json
 {
   "title": "Task 1",
-  "color": "#FF0000",
+  "color": "red",
   "status": 0
 }
 ```
@@ -167,7 +167,7 @@ Response:
   "data": {
     "id": "1",
     "title": "Task 1",
-    "color": "#FF0000",
+    "color": "red",
     "status": 0,
     "timestamps": "2021-09-01T00:00:00.000Z"
   }
@@ -191,7 +191,7 @@ Request body:
 ```json
 {
   "title": "Task 1",
-  "color": "#FF0000",
+  "color": "red",
   "status": 1
 }
 ```
@@ -203,7 +203,7 @@ Response:
   "data": {
     "id": "1",
     "title": "Task 1",
-    "color": "#FF0000",
+    "color": "red",
     "status": 1,
     "timestamps": "2021-09-01T00:00:00.000Z"
   }
@@ -229,7 +229,7 @@ Response:
   "data": {
     "id": "1",
     "title": "Task 1",
-    "color": "#FF0000",
+    "color": "red",
     "status": 0,
     "timestamps": "2021-09-01T00:00:00.000Z"
   }
