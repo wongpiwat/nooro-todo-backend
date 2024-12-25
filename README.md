@@ -208,7 +208,10 @@ MYSQL_DATABASE_PASSWORD=password
 
 ## Project Structure
 
+The project structure is as follows:
+
 ```bash
+.
 ├── src
 │   ├── app.ts // express app
 │   ├── controllers
