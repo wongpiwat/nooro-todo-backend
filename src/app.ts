@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const port = process.env.PORT;
+const port = process.env.SERVER_PORT || 5000;
 
 app.get("/", (req, res) => {
   res.send("🚀 Welcome to the Todo App APIs!");

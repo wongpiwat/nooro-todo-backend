@@ -1,6 +1,7 @@
 {
   "name": "nooro-todo-backend",
   "version": "1.0.0",
+  "private": true,
   "main": "src/app.ts",
   "scripts": {
     "start": "ts-node src/app.ts",
