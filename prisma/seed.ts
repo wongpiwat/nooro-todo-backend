@@ -4,6 +4,13 @@ const prisma = new PrismaClient();
 
 const taskData: Prisma.TaskCreateInput[] = [
   {
+    id: "2o1Im6sr1o",
+    title: "What I really want is just to get the idea down fast, thoughtfulness be damned",
+    color: "blue",
+    status: false,
+    timestamps: new Date(),
+  },
+  {
     id: "4I4dk1065c",
     title:
       "Collect illustrations for socials and draw up technical specifications for the design team",
