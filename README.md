@@ -193,10 +193,10 @@ npx prisma db seed
 
 ## Set Environment Variables
 
-Express.js uses the `.env.local` file to inject environment variables into the app.
+Express.js uses the `.env` file to inject environment variables into the app.
 
 ```bash
-# .env.local
+# .env
 SERVER_PORT=port
 MYSQL_DATABASE_URL=mysql://admin:password@example:3306/defaultdb
 MYSQL_DATABASE_NAME=defaultdb
