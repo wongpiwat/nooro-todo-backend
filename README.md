@@ -1,5 +1,148 @@
 This is an Express.js project.
 
+## API Endpoints
+
+- GET /api/v1/tasks
+
+Response:
+
+```json
+{
+  "data": [
+    {
+      "id": "1",
+      "title": "Task 1",
+      "color": "#FF0000",
+      "status": 0,
+      "timestamps": "2021-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "Task 2",
+      "color": "#00FF00",
+      "status": 1,
+      "timestamps": "2021-09-01T00:00:00.000Z"
+    }
+  ]
+}
+```
+
+---
+
+- GET /api/v1/tasks/:id
+
+Request params:
+
+```json
+{
+  "id": "1"
+}
+```
+
+Response:
+
+```json
+{
+  "data": {
+    "id": "1",
+    "title": "Task 1",
+    "color": "#FF0000",
+    "status": 0,
+    "timestamps": "2021-09-01T00:00:00.000Z"
+  }
+}
+```
+
+---
+
+- POST /api/v1/tasks
+
+Request body:
+
+```json
+{
+  "title": "Task 1",
+  "color": "#FF0000",
+  "status": 0
+}
+```
+
+Response:
+
+```json
+{
+  "data": {
+    "id": "1",
+    "title": "Task 1",
+    "color": "#FF0000",
+    "status": 0,
+    "timestamps": "2021-09-01T00:00:00.000Z"
+  }
+}
+```
+
+---
+
+- PUT /api/v1/tasks/:id
+
+Request params:
+
+```json
+{
+  "id": "1"
+}
+```
+
+Request body:
+
+```json
+{
+  "title": "Task 1",
+  "color": "#FF0000",
+  "status": 1
+}
+```
+
+Response:
+
+```json
+{
+  "data": {
+    "id": "1",
+    "title": "Task 1",
+    "color": "#FF0000",
+    "status": 1,
+    "timestamps": "2021-09-01T00:00:00.000Z"
+  }
+}
+```
+
+---
+
+- DELETE /api/v1/tasks/:id
+
+Request params:
+
+```json
+{
+  "id": "1"
+}
+```
+
+Response:
+
+```json
+{
+  "data": {
+    "id": "1",
+    "title": "Task 1",
+    "color": "#FF0000",
+    "status": 0,
+    "timestamps": "2021-09-01T00:00:00.000Z"
+  }
+}
+```
+
 ## Getting Started
 
 First, run the development server:
@@ -61,4 +204,30 @@ MYSQL_DATABASE_HOST=example
 MYSQL_DATABASE_PORT=3306
 MYSQL_DATABASE_USER=admin
 MYSQL_DATABASE_PASSWORD=password
+```
+
+## Project Structure
+
+```bash
+├── src
+│   ├── app.ts // express app
+│   ├── controllers
+│   │   └── task.controller.ts
+│   ├── routes
+│   │   └── task.routes.ts
+│   └── services
+│       └── task.service.ts
+├── prisma
+│   ├── migrations
+│   ├── schema.prisma
+│   └── seed.ts
+├── .env
+├── .env.example
+├── .gitignore
+├── .prettierrc
+├── package.json
+├── package-lock.json
+├── README.md
+├── tsconfig.json
+└── vercel.json
 ```
