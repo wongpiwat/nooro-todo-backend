@@ -232,5 +232,6 @@ The project structure is as follows:
 ├── package-lock.json
 ├── README.md
 ├── tsconfig.json
-└── vercel.json
+├── vercel.json
+└── yarn.lock
 ```
